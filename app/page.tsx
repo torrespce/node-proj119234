@@ -1,11 +1,14 @@
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
+    return (
+        <main className="h-screen flex items-center justify-center">
+            <div className="text-center">
+                <h1 className="tracking-tight font-bold text-5xl text-violet-950">ŁUKASZ CHĘCIŃSKI</h1>
+                <p className="text-3xl">Nr albumu: 119234</p>
 
-      </div>
-    </main>
-  );
+                <Link href="/new/new" className="text-2xl font-extrabold">Press (PAGE 2)</Link>
+            </div>
+        </main>
+    );
 }
