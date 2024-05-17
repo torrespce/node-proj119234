@@ -2,13 +2,14 @@ import Link from "next/link";
 
 export default function Home() {
     return (
-        <main className="h-screen flex items-center justify-center">
+        <div className="h-screen flex items-center justify-center">
             <div className="text-center">
-                <h1 className="tracking-tight font-bold text-5xl text-violet-950">ŁUKASZ CHĘCIŃSKI</h1>
-                <p className="text-3xl">Nr albumu: 119234</p>
-
-                <Link href="/new/new" className="text-2xl font-extrabold">Press (PAGE 2)</Link>
+                <p className="text-5xl text-red-600 font-bold tracking-tighter">
+                    Łukasz Chęciński
+                </p>
+                <p className="text-2xl">Nr albumu: 119234</p>
+                <Link href="/new">Link do drugiej strony</Link>
             </div>
-        </main>
+        </div>
     );
 }

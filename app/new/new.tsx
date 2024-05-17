@@ -1,16 +1,16 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function New() {
     return (
-        <main className="h-screen flex items-center justify-center">
+        <div className="h-screen flex items-center justify-center">
             <div className="text-center">
-                <h1 className="tracking-tight font-bold text-5xl text-violet-950">New Page</h1>
-                <p className="text-3xl">This is a new page.</p>
-
-                <Link href="/">
-                    <a className="text-2xl font-extrabold">Go back to Home</a>
-                </Link>
+                <p className="text-5xl text-orange-500 font-bold">Druga strona</p>
+                <Link href="/">Strona główna</Link>
+                <div className="py-8">
+                    <Image src="/lodz.jpg" alt="lodz" width={600} height={400} />
+                </div>
             </div>
-        </main>
+        </div>
     );
 }
